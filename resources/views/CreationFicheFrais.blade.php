@@ -20,7 +20,7 @@
                     </div>
                 @endif
 
-            <form class="align-content-center" id="contactForm" action="/fichefrais/ajout" method="post">
+            <form class="align-content-center" id="contactForm" action="{{route('SaveFF')}}" method="post">
                 @csrf
                 <div class="form-row" style="margin-top: 15px;">
                     <div class="col">

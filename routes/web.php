@@ -35,14 +35,14 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/fichefrais/generation', [FicheFraisController::class, 'index'])->name('fichefrais.index');
 
 /* Route N°4 */
-Route::post('/fichefrais/ajout', [FicheFraisController::class, 'store']);
+Route::post('/fichefrais/ajout', [FicheFraisController::class, 'store'])->name('SaveFF');
 
 //Fiche de frais hors forfait
 /* Route N°5 */
 Route::get('/fichefraishorsforfait/generation', [FicheFraisHorsForfaitController::class, 'index'])->name('fichefraishorsforfait.index');
 
 /* Route N°6 */
-Route::post('/fichefraishorsforfait/ajout', [FicheFraisHorsForfaitController::class, 'store']);
+Route::post('/fichefraishorsforfait/ajout', [FicheFraisHorsForfaitController::class, 'store'])->name('SaveFFHF');
 
 
 //Opération Réussie enregistrement fiche de frais.

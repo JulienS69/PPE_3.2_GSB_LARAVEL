@@ -13,7 +13,7 @@
         </div>
     </div>
 
-    <form class="align-content-center" id="contactForm" action="/fichefraishorsforfait/ajout" method="post">
+    <form class="align-content-center" id="contactForm" action="{{route('SaveFFHF')}}" method="post">
         @csrf
         <!-- Label ou est renseigné l'id du visiteur connecté récupérer à l'aide d'une variable créee dans le Controller -->
         <div class="has-feedback form-group mb-3" style="height: 70px;width: 350px;"><label class="form-label" for="from_name" style="font-size: 20px;">Id
